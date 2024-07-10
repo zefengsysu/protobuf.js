@@ -1,11 +1,11 @@
 {
-  "name": "protobufjs-cli",
+  "name": "@ks-perf/protobufjs-cli",
   "description": "Translates between file formats and generates static code as well as TypeScript definitions.",
-  "version": "1.1.1",
-  "author": "Daniel Wirtz <dcode+protobufjs@dcode.io>",
+  "version": "1.1.1-https://github.com/zefengsysu/protobuf.js.git",
+  "author": "wangzefeng",
   "repository": {
     "type": "git",
-    "url": "https://github.com/protobufjs/protobuf.js.git"
+    "url": "https://github.com/zefengsysu/protobuf.js.git"
   },
   "engines": {
     "node": ">=12.0.0"
