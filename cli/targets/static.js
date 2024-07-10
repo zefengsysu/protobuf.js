@@ -116,7 +116,7 @@ function buildNamespace(ref, ns) {
     if (ns.name !== "") {
         push("");
         if (!ref && config.es6)
-            push("export const " + escapeName(ns.name) + " = " + escapeName(ref) + "." + escapeName(ns.name) + " = (() => {");
+            push("export const " + escapeName(ns.name) + " = (() => {");
         else
             push(escapeName(ref) + "." + escapeName(ns.name) + " = (function() {");
         ++indent;
@@ -147,6 +147,9 @@ function buildNamespace(ref, ns) {
         push("return " + escapeName(ns.name) + ";");
         --indent;
         push("})();");
+
+        if (!ref && config.es6)
+            push(escapeName(ref) + "." + escapeName(ns.name) + " = Object.assign(" + escapeName(ref) + "." + escapeName(ns.name) + " || {}, " + escapeName(ns.name) + ");");
     }
 }
 
