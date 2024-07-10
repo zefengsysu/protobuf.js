@@ -1,7 +1,7 @@
 {
   "name": "@ks-perf/protobufjs-cli",
   "description": "Translates between file formats and generates static code as well as TypeScript definitions.",
-  "version": "1.1.1-https://github.com/zefengsysu/protobuf.js.git",
+  "version": "1.1.1-namespace-workaround",
   "author": "wangzefeng",
   "repository": {
     "type": "git",
