@@ -52,7 +52,7 @@ exports.main = function main(args, callback) {
             delimited: true,
             typeurl: true,
             beautify: true,
-            comments: true,
+            comments: false,
             service: true,
             es6: null,
             lint: lintDefault,
